@@ -46,7 +46,7 @@ class LunaLogger {
   /// Log a new debug-level log.
   void debug(String message) {
     LunaLogHiveObject log = LunaLogHiveObject.withMessage(
-      type: LunaLogType.WARNING,
+      type: LunaLogType.DEBUG,
       message: message,
     );
     Database.logs.box.add(log);
